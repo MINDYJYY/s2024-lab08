@@ -51,6 +51,8 @@ function main (fileNames: string[]): void {
     });
 }
 
+// prefer async/await than promieses: increase readability
+
 // Implement the async version of the above here
 // Your version should not use .then and should use try/catch instead of .catch
 async function mainAsync(fileNames: string[]): Promise<void> {
@@ -58,7 +60,7 @@ async function mainAsync(fileNames: string[]): Promise<void> {
     fileNames.forEach(async (fileName: string) => {
         console.log(`Running logo detection on ${fileName}`);
         try {
-            const [result] = await client.logoDetection(fileName);
+            const [result] = await client.logoDetection(fileName); 
             let scores: number[] = [];
             const logos = result.logoAnnotations;
             logos?.forEach((logo) => {
