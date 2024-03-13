@@ -1,7 +1,7 @@
 # f2023-lab08
 
 ## Running
-1. Follow the directions in the lab instructions to set up a Google Cloud Vision API account and ensure you are logged
+1. Follow the directions in the lab instructions to set up a Google Cloud Vision API account and ensure you are logged (`gcloud auth application-default login`)
 1. `npm i`
 1. `npm run compile`
 1. `npm run start`
